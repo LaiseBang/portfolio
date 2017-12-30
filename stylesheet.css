@@ -1,0 +1,61 @@
+   /********* Generelt ***************/
+
+   * {
+       margin: 0;
+       padding: 0;
+   }
+
+   body {
+       font-family: 'Myriad Pro', 'Arial';
+       color: black;
+       /*    background-image: url(img/baggrund_papir.png); */
+       background-repeat: no-repeat;
+       background-size: cover;
+   }
+
+   /***********logo************/
+
+   .logo {
+       position: fixed;
+   }
+
+
+   /***** img ******/
+
+   .colmn1 img,
+   .colmn2 img {
+       max-width: 40vw;
+       padding-bottom: 20px;
+   }
+
+   .colmn3 img {
+       max-width: 10vw;
+       padding-bottom: 20px;
+   }
+
+   /******** container *****/
+
+   .container {
+       display: flex;
+       flex-wrap: wrap;
+   }
+
+   /******** colmn****/
+
+   .colmn_logo,
+   .colmn3 {
+       flex-grow: 0.1;
+       flex-basis: 60px;
+       padding-right: 15px;
+   }
+   .colmn1,
+   .colmn2 {
+       padding-top: 15%;
+       flex-grow: 3;
+       flex-basis: 250px;
+       padding-right: 20px;
+   }
+
+.colmn3 {
+    padding-top: 15%;
+}

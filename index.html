@@ -1,15 +1,54 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="da">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Laise Bang Portfolio - 1. semester eksamen KEA MMD E17</title>
     <link rel="stylesheet" href="stylesheet.css">
 
-     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon.png">
 </head>
 
 <body>
-    <script src=""></script>
+
+    <div class="container">
+        <div class="colmn_logo">
+            <img src="img/logo_sort_skrift.png">
+        </div>
+        <div class="colmn1">
+            <div class="column_content">
+                <div class="top">
+                    <a href="tema1.html"> <img src="img/stilartsite.jpg" alt="Tema 1 grundlæggende web - stilartssite"></a> </div>
+                <div class="bottom">
+                    <img src="img/animation.jpg" alt="Tema 2 animation - Skider på dig!">
+                </div>
+            </div>
+        </div>
+        <div class="colmn2">
+            <div class="column_content">
+                <div class="top">
+                    <img src="img/demonstration.gif" alt="Tema 3 video - gif som viser begyndelsen af en film om demonstrationer">
+                </div>
+                <div class="bottom">
+                    <img src="img/ux.jpg" alt="Tema 4 UX - styletile som viser app udviklet til tema 3">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+
+    </script>
 </body>
+
 </html>
