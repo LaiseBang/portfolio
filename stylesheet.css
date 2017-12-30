@@ -28,9 +28,11 @@
        padding-bottom: 20px;
    }
 
-   .colmn3 img {
+   .colmn3 img,
+   .colmn_logo img {
        max-width: 10vw;
-       padding-bottom: 20px;
+       padding-bottom: 0px;
+       padding-right: 80vw;
    }
 
    /******** container *****/
@@ -42,20 +44,34 @@
 
    /******** colmn****/
 
-   .colmn_logo,
+   .colmn_logo {
+       flex-grow: 0.1;
+
+       padding-right: 15px;
+   }
+
    .colmn3 {
        flex-grow: 0.1;
        flex-basis: 60px;
        padding-right: 15px;
    }
+
    .colmn1,
    .colmn2 {
-       padding-top: 15%;
+
        flex-grow: 3;
        flex-basis: 250px;
        padding-right: 20px;
    }
 
-.colmn3 {
-    padding-top: 15%;
-}
+   .colmn3 {
+       padding-top: 15%;
+   }
+
+   /****** section logo *******/
+
+   #logo {
+       display: flex;
+       flex-wrap: wrap;
+       max-height: 13vw;
+   }
