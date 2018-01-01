@@ -8,9 +8,6 @@
    body {
        font-family: 'Myriad Pro', 'Arial';
        color: black;
-       /*    background-image: url(img/baggrund_papir.png); */
-       background-repeat: no-repeat;
-       background-size: cover;
    }
 
    ul {
@@ -22,19 +19,66 @@
    /***********logo************/
 
    .logo {
-       position: fixed;
+       background-image: url("img/logo_sort_skrift.png");
+       background-repeat: no-repeat;
+       width: 28vw;
+       height: 23vw;
+       position: absolute;
+       top: 0;
+       left: 0;
+       z-index: 0;
    }
 
+   /********** Navigation / Menu **************
+   header {
+       position: fixed;
+       background: linear-gradient(to bottom, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.3) 100%);
+       width: 100%;
+       padding: 1em;
+   }
+
+   header nav {
+       text-align: right;
+       margin: 0 5vw 0 0;
+   }
+
+   header nav a {
+       text-decoration: none;
+       color: #fff;
+       padding-left: 4px;
+       display: block;
+   }
+
+   header nav a:hover {
+       color: dimgrey;
+       background-color: white;
+   }
+
+   @media screen and (min-width: 676px) {
+       header nav a {
+           display: inline-block;
+       }
+   }
+
+   li {
+       display: inline;
+   }
+
+   nav {
+       font-size: 1.1em;
+       text-align-last: right;
+   }
+*/
+
+   /********** Navigation / menu slut **************/
 
    /***** img ******/
 
-   .colmn1 img,
    .colmn2 img {
-       max-width: 40vw;
+       max-width: 17vw;
        padding-bottom: 20px;
    }
 
-   .colmn3 img,
    .colmn_logo img {
        max-width: 10vw;
        padding-bottom: 0px;
@@ -46,38 +90,115 @@
    .container {
        display: flex;
        flex-wrap: wrap;
+       position: relative;
    }
 
    /******** colmn****/
 
    .colmn_logo {
        flex-grow: 0.1;
-
        padding-right: 15px;
    }
 
-   .colmn3 {
-       flex-grow: 0.1;
-       flex-basis: 60px;
-       padding-right: 15px;
-   }
 
-   .colmn1,
    .colmn2 {
-
-       flex-grow: 3;
+       border-left-style: solid;
+       border-left-color: gainsboro;
+       flex-grow: 2;
        flex-basis: 250px;
+       padding-left: 20px;
        padding-right: 20px;
-   }
-
-   .colmn3 {
-       padding-top: 15%;
+       margin-left: 33vw;
    }
 
    /****** section logo *******/
 
-   #logo {
+   .logo {
        display: flex;
        flex-wrap: wrap;
        max-height: 13vw;
    }
+
+   /*************** media query ***********/
+
+   /******** ipad portrait **************/
+
+   @media screen and (min-width: 376px) and (max-width: 768px) and (orientation: portrait) {
+
+       .colmn2 {
+           margin-left: 20vw;
+           background-color: darkseagreen;
+       }
+       .colmn2 img {
+           max-width: 36vw;
+       }
+       .colmn_logo img {
+           max-width: 15vw;
+       }
+   }
+
+   /***************mobil portrait ****************/
+
+   @media screen and (min-width: 300px) and (max-width: 375px) and (orientation: portrait) {
+
+       .colmn2 {
+           margin-left: 13vw;
+           background-color: greenyellow;
+       }
+       .colmn2 img {
+           max-width: 58vw;
+       }
+       .colmn_logo img {
+           max-width: 20vw;
+       }
+   }
+
+   /********* mobil landscape ****/
+
+   @media screen and (min-width: 376px) and (max-width: 627px) and (orientation: landscape) {
+
+       .colmn2 {
+           margin-left: 18vw;
+           background-color: red;
+       }
+       .colmn2 img {
+           max-width: 36vw;
+       }
+       .colmn_logo img {
+           max-width: 15vw;
+       }
+   }
+
+   /********** ipad landscape ********/
+
+   @media screen and (min-width: 628px) and (max-width: 1024px) and (orientation: landscape) {
+       .colmn2 {
+           margin-left: 18vw;
+           background-color: orange;
+       }
+       .colmn2 img {
+           max-width: 45vw;
+       }
+       .colmn_logo img {
+           max-width: 14vw;
+       }
+   }
+
+   /************* desktop landscap **********/
+
+   @media screen and (min-width: 1025px) and (max-width: 2560px) and (orientation: landscape) {
+       .colmn2 {
+           margin-left: 18vw;
+           background-color: pink;
+       }
+       .colmn2 img {
+           max-width: 30vw;
+       }
+       .colmn_logo img {
+           max-width: 15vw;
+       }
+   }
+
+   /********** media query slut ***************/
+
+   /******* tema1 *********/
