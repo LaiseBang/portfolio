@@ -14,6 +14,32 @@
        list-style-type: none;
        margin: 0;
        padding: 0;
+       color: black;
+   }
+
+   h1 {
+       font-size: 1.7em;
+       color: darkslategray;
+   }
+
+   h2 {
+       font-size: 1.2em;
+       color: black;
+   }
+
+   h3 {
+       font-size: 1.2em;
+       font-style: normal;
+       color: darkslategray;
+   }
+
+   p {
+       font-size: 1em;
+       color: black;
+   }
+
+   a {
+       color: black;
    }
 
    /***********logo************/
@@ -202,3 +228,29 @@
    /********** media query slut ***************/
 
    /******* tema1 *********/
+
+   .tema1_colmn1 {
+       border-left-style: solid;
+       border-left-color: gainsboro;
+       flex-grow: 1;
+       flex-basis: 250px;
+       padding-left: 20px;
+       padding-right: 20px;
+       margin-left: 20vw;
+       max-width: 25vw;
+   }
+
+   .tema1_colmn2 img {
+       max-width: 30vw;
+   }
+
+   .tema1_colmn3 img {
+       max-width: 8vw;
+       padding-bottom: 6px;
+   }
+
+   nav {
+       flex-grow: 0;
+       flex-basis: 50px;
+       margin: 0 10px 0 30px;
+   }
