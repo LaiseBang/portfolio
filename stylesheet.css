@@ -10,6 +10,17 @@
        color: black;
    }
 
+   .baggrund {
+       background: url(img/laise_baggrund.jpg);
+       background-size: cover;
+   }
+
+   .transperant {
+       background-color: #ffffff;
+       opacity: 0.6;
+       filter: alpha(opacity=60);
+   }
+
    ul {
        list-style-type: none;
        margin: 0;
@@ -214,14 +225,14 @@
 
    @media screen and (min-width: 1025px) and (max-width: 2560px) and (orientation: landscape) {
        .colmn2 {
-           margin-left: 25vw;
+           margin-left: 60vw;
            /*      background-color: pink; */
        }
        .colmn2 img {
-           max-width: 30vw;
+           max-width: 15vw;
        }
        .colmn_logo img {
-           max-width: 15vw;
+           max-width: 7vw;
        }
    }
 
@@ -261,4 +272,63 @@
        flex-grow: 0;
        flex-basis: 50px;
        margin: 0 10px 0 30px;
+   }
+
+   /******* tema2 *********/
+
+   .tema2_colmn1 {
+       border-left-style: solid;
+       border-left-color: gainsboro;
+       flex-grow: 2;
+       flex-basis: 250px;
+       padding-left: 20px;
+       padding-right: 20px;
+       padding-bottom: 20px;
+       margin-left: 20vw;
+       max-width: 25vw;
+   }
+
+   .tema2_colmn2 {
+       flex-grow: 1;
+       flex-basis: 250px;
+       padding-left: 20px;
+       padding-right: 20px;
+   }
+
+   .tema2_colmn2 img {
+       max-width: 30vw;
+   }
+
+   .tema2_colmn3 img {
+       max-width: 8vw;
+       padding-bottom: 6px;
+       padding-right: 20px;
+   }
+
+   .tema2_colmn4 {
+       border-left-style: solid;
+       border-left-color: gainsboro;
+       border-top-style: solid;
+       border-top-color: gainsboro;
+       flex-grow: 2;
+       flex-basis: 250px;
+       padding-left: 20px;
+       padding-top: 20px;
+       padding-right: 20px;
+       margin-left: 20vw;
+       max-width: 25vw;
+   }
+
+   .tema2_colmn4 img {
+       max-width: 25vw;
+   }
+
+   .tema2_colmn5 {
+       border-top-style: solid;
+       border-top-color: gainsboro;
+       padding-top: 20px;
+       flex-grow: 1;
+       flex-basis: 250px;
+       padding-left: 20px;
+       padding-right: 160px;
    }
