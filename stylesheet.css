@@ -130,6 +130,11 @@
        flex-wrap: wrap;
    }
 
+   .container2 {
+       display: flex;
+       flex-wrap: wrap;
+   }
+
    /******** colmn****/
 
    .colmn2 {
@@ -233,11 +238,31 @@
            padding: 20px;
            margin-left: 15vw;
        }
+       .container2 {
+           flex-direction: column-reverse;
+       }
        .tema2_colmn1 {
            /*    background-color: darkseagreen;*/
            max-width: 75vw;
        }
        .tema2_colmn2 {
+           /*   background-color: lavender;*/
+           border-left-style: solid;
+           border-left-color: gainsboro;
+           margin-left: 15vw;
+           padding: 20px;
+           max-width: 75vw;
+           margin-left: 15vw;
+       }
+       .tema2_colmn3 {
+           /*   background-color: lavender;*/
+           border-top-style: none;
+           margin-left: 15vw;
+           padding: 20px;
+           max-width: 75vw;
+           margin-left: 15vw;
+       }
+       .tema2_colmn4 {
            /*   background-color: lavender;*/
            border-left-style: solid;
            border-left-color: gainsboro;
@@ -276,6 +301,10 @@
 
    @media screen and (min-width: 300px) and (max-width: 375px) and (orientation: portrait) {
 
+       * {
+           font-size: 0.95em;
+       }
+
        .colmn2 {
            margin-left: 13vw;
            background-color: greenyellow;
@@ -295,6 +324,43 @@
            padding-top: 10px;
            padding-left: 18vw;
            max-width: 75vw;
+       }
+       nav img {
+           max-width: 20vw;
+       }
+       .container2 {
+           flex-direction: column-reverse;
+       }
+       .tema2_colmn1 {
+           margin-left: 13vw;
+           /*     background-color: greenyellow; */
+           max-width: 54vw;
+       }
+       .tema2_colmn2 {
+           /*    background-color: lavender; */
+           border-left-style: solid;
+           border-left-color: gainsboro;
+           margin-left: 13vw;
+           padding: 20px;
+           max-width: 54vw;
+           margin-left: 13vw;
+       }
+       .tema2_colmn3 {
+           /*   background-color: lavender;*/
+           border-top-style: none;
+           margin-left: 15vw;
+           padding: 20px;
+           max-width: 55vw;
+           margin-left: 13vw;
+       }
+       .tema2_colmn4 {
+           /*   background-color: lavender;*/
+           border-left-style: solid;
+           border-left-color: gainsboro;
+           margin-left: 15vw;
+           padding: 20px;
+           max-width: 75vw;
+           margin-left: 13vw;
        }
    }
 
@@ -321,6 +387,40 @@
            padding-top: 10px;
            padding-left: 16vw;
            max-width: 75vw;
+       }
+       .container2 {
+           flex-direction: column-reverse;
+       }
+       .tema2_colmn1 {
+           margin-left: 13vw;
+           /*     background-color: greenyellow; */
+           max-width: 60vw;
+       }
+       .tema2_colmn2 {
+           /*    background-color: lavender; */
+           border-left-style: solid;
+           border-left-color: gainsboro;
+           margin-left: 13vw;
+           padding: 20px;
+           max-width: 54vw;
+           margin-left: 13vw;
+       }
+       .tema2_colmn3 {
+           /*   background-color: lavender;*/
+           border-top-style: none;
+           margin-left: 15vw;
+           padding: 20px;
+           max-width: 55vw;
+           margin-left: 13vw;
+       }
+       .tema2_colmn4 {
+           /*   background-color: lavender;*/
+           border-left-style: solid;
+           border-left-color: gainsboro;
+           margin-left: 15vw;
+           padding: 20px;
+           max-width: 60vw;
+           margin-left: 13vw;
        }
    }
 
