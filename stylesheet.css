@@ -15,11 +15,12 @@
        background-size: cover;
    }
 
-   .transperant {
-       background-color: #ffffff;
-       opacity: 0.6;
+   /* .transperant {
        background: transparent;
+       background-color: #;
+       opacity: 0.6;
    }
+*/
 
    ul {
        list-style-type: none;
