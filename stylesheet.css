@@ -211,6 +211,16 @@
 
    /********** tema2 slut *******/
 
+   /*********** tema3 ********/
+
+   .tema3_colmn2 {
+       flex-grow: 1;
+       flex-basis: 300px;
+       padding: 20px;
+       padding-top: 150px;
+
+   }
+
    /*************** media query ***********/
 
    /******** ipad portrait **************/
