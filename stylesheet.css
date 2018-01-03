@@ -18,28 +18,25 @@
    .transperant {
        background-color: #ffffff;
        opacity: 0.6;
-       filter: alpha(opacity=60);
+       background: transparent;
    }
 
    ul {
        list-style-type: none;
-       margin: 0;
-       padding: 0;
-       color: black;
    }
 
    h1 {
-       font-size: 1.7em;
+       font-size: 1.6em;
        color: darkslategray;
    }
 
    h2 {
-       font-size: 1.2em;
+       font-size: 1.1em;
        color: black;
    }
 
    h3 {
-       font-size: 1.2em;
+       font-size: 1.1em;
        font-style: normal;
        color: darkslategray;
    }
@@ -56,36 +53,36 @@
    /***********logo************/
 
    .logo {
-
        background-repeat: no-repeat;
        width: 15vw;
        height: 20vw;
        position: fixed;
        top: 0;
        left: 0;
-       z-index: 0;
    }
 
    .logo img {
        max-width: 100%;
+       min-width: 75px;
    }
 
    /********** Navigation / Menu **************/
 
    header {
        position: fixed;
-       width: 100%;
+       width: 100vw;
        padding: 5px;
    }
 
-  header img {
-       max-width: 75px;
+   header img {
+       max-width: 100px;
    }
 
    header nav {
        text-align: right;
        margin: 0 5vw 0 0;
-       z-index: 1;
+       flex-grow: 0;
+       flex-basis: 50px;
    }
 
    header nav a {
@@ -104,10 +101,9 @@
        }
    }
 
-   ul {
+   header ul {
        list-style-type: none;
-       margin: 0;
-       padding: 0;
+       padding: 10px;
    }
 
    header li {
@@ -115,8 +111,6 @@
    }
 
    header nav {
-       font-size: 1.1em;
-       text-align-last: right;
        padding-bottom: 80px;
    }
 
@@ -129,27 +123,14 @@
        padding-bottom: 20px;
    }
 
-   .colmn_logo img {
-       max-width: 10vw;
-       padding-bottom: 0px;
-       padding-right: 0vw;
-   }
-
    /******** container *****/
 
    .container {
        display: flex;
        flex-wrap: wrap;
-       position: relative;
    }
 
    /******** colmn****/
-
-   .colmn_logo {
-       flex-grow: 0.1;
-       padding-right: 15px;
-   }
-
 
    .colmn2 {
        border-left-style: solid;
@@ -158,19 +139,72 @@
        flex-basis: 250px;
        padding-left: 20px;
        padding-right: 20px;
-       margin-left: 33vw;
+       margin-left: 60vw;
    }
 
-   /****** section logo *******/
+   /******* tema1 *********/
 
-   .logo {
-       /*  display: flex;
-       flex-wrap: wrap;
-       max-height: 13vw; */
-       position: fixed;
-       left: 0;
-       top: 0;
+   .tema1_colmn1,
+   .tema2_colmn1 {
+       flex-grow: 2.5;
+       flex-basis: 300px;
+       border-left-style: solid;
+       border-left-color: gainsboro;
+       padding: 20px;
+       padding-top: 150px;
+       margin-left: 15vw;
+       max-width: 40vw;
+       z-index: -1;
    }
+
+   .tema1_colmn2,
+   .tema2_colmn2 {
+       flex-grow: 1;
+       flex-basis: 300px;
+       padding: 20px;
+       padding-top: 150px;
+       z-index: -1;
+   }
+
+   .tema1_colmn2 img,
+   .tema2_colmn2 img {
+       max-width: 35vw;
+       padding-bottom: 10px;
+   }
+
+   /******* tema2 *********/
+
+   .tema2_colmn3 {
+       border-left-style: solid;
+       border-left-color: gainsboro;
+       border-top-style: solid;
+       border-top-color: gainsboro;
+       flex-grow: 2;
+       flex-basis: 250px;
+       padding: 20px;
+       padding-right: 20px;
+       margin-left: 15vw;
+       max-width: 40vw;
+   }
+
+   .tema2_colmn3 img {
+       max-width: 35vw;
+       padding-bottom: 10px;
+   }
+
+   .tema2_colmn4 {
+       border-top-style: solid;
+       border-top-color: gainsboro;
+       padding: 20px;
+       flex-grow: 1;
+       max-width: 50vw;
+       flex-basis: 300px;
+       padding-left: 20px;
+       padding-right: 90px;
+       z-index: -1;
+   }
+
+   /********** tema2 slut *******/
 
    /*************** media query ***********/
 
@@ -180,14 +214,62 @@
 
        .colmn2 {
            margin-left: 20vw;
-           /*         background-color: darkseagreen; */
+           background-color: brown;
+           width: 50vw;
        }
        .colmn2 img {
            max-width: 36vw;
        }
-       .colmn_logo img {
-           max-width: 15vw;
+
+       .tema1_colmn1 {
+           /*background-color: darkseagreen; */
+           max-width: 75vw;
        }
+       .tema1_colmn2 {
+           /* background-color: lavender; */
+           max-width: 75vw;
+           border-left-style: solid;
+           border-left-color: gainsboro;
+           padding: 20px;
+           margin-left: 15vw;
+       }
+       .tema2_colmn1 {
+           /*    background-color: darkseagreen;*/
+           max-width: 75vw;
+       }
+       .tema2_colmn2 {
+           /*   background-color: lavender;*/
+           border-left-style: solid;
+           border-left-color: gainsboro;
+           margin-left: 15vw;
+           padding: 20px;
+           max-width: 75vw;
+           margin-left: 15vw;
+       }
+   }
+
+   /********** ipad landscape ********/
+
+   @media screen and (min-width: 813px) and (max-width: 1024px) and (orientation: landscape) {
+       .colmn2 {
+           margin-left: 18vw;
+           background-color: orange;
+       }
+       .colmn2 img {
+           max-width: 45vw;
+       }
+
+       .tema1_colmn1 {
+           margin-left: 13vw;
+           /*       background-color: red;*/
+           max-width: 50vw;
+       }
+       .tema1_colmn2 {
+           /*     background-color: aqua; */
+           padding-left: 15px;
+           max-width: 50vw;
+       }
+
    }
 
    /***************mobil portrait ****************/
@@ -196,157 +278,52 @@
 
        .colmn2 {
            margin-left: 13vw;
-           /*        background-color: greenyellow; */
+           background-color: greenyellow;
        }
+
        .colmn2 img {
            max-width: 58vw;
        }
-       .colmn_logo img {
-           max-width: 20vw;
+
+       .tema1_colmn1 {
+           margin-left: 13vw;
+           /*     background-color: greenyellow; */
+           max-width: 54vw;
+       }
+       .tema1_colmn2 {
+           /*    background-color: lavender; */
+           padding-top: 10px;
+           padding-left: 18vw;
+           max-width: 75vw;
        }
    }
 
    /********* mobil landscape ****/
 
-   @media screen and (min-width: 376px) and (max-width: 627px) and (orientation: landscape) {
+   @media screen and (min-width: 376px) and (max-width: 812px) and (orientation: landscape) {
 
        .colmn2 {
            margin-left: 18vw;
-           /*         background-color: red; */
+           background-color: red;
+           max-width: 55vw;
        }
        .colmn2 img {
            max-width: 36vw;
        }
-       .colmn_logo img {
-           max-width: 15vw;
+
+       .tema1_colmn1 {
+           margin-left: 13vw;
+           /*      background-color: red; */
+           max-width: 65vw;
+       }
+       .tema1_colmn2 {
+           /*    background-color: aqua;*/
+           padding-top: 10px;
+           padding-left: 16vw;
+           max-width: 75vw;
        }
    }
 
-   /********** ipad landscape ********/
 
-   @media screen and (min-width: 628px) and (max-width: 1024px) and (orientation: landscape) {
-       .colmn2 {
-           margin-left: 18vw;
-           /*       background-color: orange; */
-       }
-       .colmn2 img {
-           max-width: 45vw;
-       }
-       .colmn_logo img {
-           max-width: 14vw;
-       }
-   }
-
-   /************* desktop landscap **********/
-
-   @media screen and (min-width: 1025px) and (max-width: 2560px) and (orientation: landscape) {
-       .colmn2 {
-           margin-left: 60vw;
-           /*      background-color: pink; */
-       }
-       .colmn2 img {
-           max-width: 15vw;
-       }
-       .colmn_logo img {
-           max-width: 7vw;
-       }
-   }
 
    /********** media query slut ***************/
-
-   /******* tema1 *********/
-
-   .tema1_colmn1 {
-       border-left-style: solid;
-       border-left-color: gainsboro;
-       flex-grow: 2;
-       flex-basis: 250px;
-       padding-left: 20px;
-       padding-right: 20px;
-       margin-left: 20vw;
-       max-width: 25vw;
-       z-index: -1;
-   }
-
-   .tema1_colmn2 {
-       flex-grow: 1;
-       flex-basis: 250px;
-       padding-left: 20px;
-       padding-right: 20px;
-       z-index: -1;
-   }
-
-   .tema1_colmn2 img {
-       max-width: 30vw;
-   }
-
-   .tema1_colmn3 img {
-       max-width: 8vw;
-       padding-bottom: 6px;
-       padding-right: 20px;
-   }
-
-   nav {
-       flex-grow: 0;
-       flex-basis: 50px;
-       margin: 0 10px 0 30px;
-   }
-
-   /******* tema2 *********/
-
-   .tema2_colmn1 {
-       border-left-style: solid;
-       border-left-color: gainsboro;
-       flex-grow: 2;
-       flex-basis: 250px;
-       padding-left: 20px;
-       padding-right: 20px;
-       padding-bottom: 20px;
-       margin-left: 20vw;
-       max-width: 25vw;
-   }
-
-   .tema2_colmn2 {
-       flex-grow: 1;
-       flex-basis: 250px;
-       padding-left: 20px;
-       padding-right: 20px;
-   }
-
-   .tema2_colmn2 img {
-       max-width: 30vw;
-   }
-
-   .tema2_colmn3 img {
-       max-width: 8vw;
-       padding-bottom: 6px;
-       padding-right: 20px;
-   }
-
-   .tema2_colmn4 {
-       border-left-style: solid;
-       border-left-color: gainsboro;
-       border-top-style: solid;
-       border-top-color: gainsboro;
-       flex-grow: 2;
-       flex-basis: 250px;
-       padding-left: 20px;
-       padding-top: 20px;
-       padding-right: 20px;
-       margin-left: 20vw;
-       max-width: 25vw;
-   }
-
-   .tema2_colmn4 img {
-       max-width: 25vw;
-   }
-
-   .tema2_colmn5 {
-       border-top-style: solid;
-       border-top-color: gainsboro;
-       padding-top: 20px;
-       flex-grow: 1;
-       flex-basis: 250px;
-       padding-left: 20px;
-       padding-right: 160px;
-   }
