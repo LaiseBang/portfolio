@@ -125,12 +125,9 @@
 
    /******** container *****/
 
-   .container {
-       display: flex;
-       flex-wrap: wrap;
-   }
-
-   .container2 {
+   .container,
+   .container2,
+   .container3 {
        display: flex;
        flex-wrap: wrap;
    }
@@ -185,7 +182,7 @@
        border-top-style: solid;
        border-top-color: gainsboro;
        flex-grow: 2;
-       flex-basis: 250px;
+       flex-basis: 204px;
        padding: 20px;
        padding-right: 20px;
        margin-left: 15vw;
@@ -213,12 +210,29 @@
 
    /*********** tema3 ********/
 
-   .tema3_colmn2 {
+   .tema3_colmn5 {
+       border-left-style: solid;
+       border-left-color: gainsboro;
+       border-top-style: solid;
+       border-top-color: gainsboro;
        flex-grow: 1;
        flex-basis: 300px;
        padding: 20px;
-       padding-top: 150px;
+       margin-left: 15vw;
+   }
 
+   .tema3_colmn6 {
+       border-top-style: solid;
+       border-top-color: gainsboro;
+       flex-grow: 1;
+       flex-basis: 300px;
+       padding: 20px;
+       max-width: 50vw;
+   }
+
+   .tema3_colmn6 img {
+       max-width: 35vw;
+       padding-bottom: 10px;
    }
 
    /*************** media query ***********/
@@ -269,7 +283,7 @@
            border-top-style: none;
            margin-left: 15vw;
            padding: 20px;
-           max-width: 75vw;
+           max-width: 50vw;
            margin-left: 15vw;
        }
        .tema2_colmn4 {
@@ -279,6 +293,16 @@
            margin-left: 15vw;
            padding: 20px;
            max-width: 75vw;
+           margin-left: 15vw;
+       }
+       .tema3_colmn6 {
+           border-top-style: none;
+           border-left-style: solid;
+           border-left-color: gainsboro;
+           flex-grow: 1;
+           flex-basis: 300px;
+           padding: 20px;
+           max-width: 50vw;
            margin-left: 15vw;
        }
    }
@@ -304,7 +328,6 @@
            padding-left: 15px;
            max-width: 50vw;
        }
-
    }
 
    /***************mobil portrait ****************/
@@ -312,7 +335,7 @@
    @media screen and (min-width: 300px) and (max-width: 375px) and (orientation: portrait) {
 
        * {
-           font-size: 0.95em;
+           font-size: 0.94em;
        }
 
        .colmn2 {
@@ -362,6 +385,7 @@
            padding: 20px;
            max-width: 55vw;
            margin-left: 13vw;
+           flex-basis: 98px;
        }
        .tema2_colmn4 {
            /*   background-color: lavender;*/
@@ -370,6 +394,25 @@
            margin-left: 15vw;
            padding: 20px;
            max-width: 75vw;
+           margin-left: 13vw;
+       }
+       .tema3_colmn5 {
+           /*   background-color: lavender;*/
+           border-left-style: solid;
+           border-left-color: gainsboro;
+           margin-left: 13vw;
+           padding: 20px;
+           max-width: 75vw;
+
+       }
+       .tema3_colmn6 {
+           border-top-style: none;
+           border-left-style: solid;
+           border-left-color: gainsboro;
+           flex-grow: 1;
+           flex-basis: 300px;
+           padding: 20px;
+           max-width: 50vw;
            margin-left: 13vw;
        }
    }
@@ -430,6 +473,25 @@
            margin-left: 15vw;
            padding: 20px;
            max-width: 60vw;
+           margin-left: 13vw;
+       }
+       .tema3_colmn5 {
+           /*   background-color: lavender;*/
+           border-left-style: solid;
+           border-left-color: gainsboro;
+           margin-left: 13vw;
+           padding: 20px;
+           max-width: 75vw;
+
+       }
+       .tema3_colmn6 {
+           border-top-style: none;
+           border-left-style: solid;
+           border-left-color: gainsboro;
+           flex-grow: 1;
+           flex-basis: 300px;
+           padding: 20px;
+           max-width: 50vw;
            margin-left: 13vw;
        }
    }
