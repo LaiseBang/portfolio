@@ -13,6 +13,7 @@
    .baggrund {
        background: url(img/laise_baggrund.jpg);
        background-size: cover;
+       background-repeat: no-repeat;
    }
 
    /* .transperant {
@@ -55,8 +56,7 @@
 
    .logo {
        background-repeat: no-repeat;
-       width: 15vw;
-       height: 20vw;
+       width: 10vw;
        position: fixed;
        top: 0;
        left: 0;
@@ -115,11 +115,15 @@
        padding-bottom: 80px;
    }
 
+   .menu_retning {
+       display: inline-block;
+   }
+
    /********** Navigation / menu slut **************/
 
    /***** img ******/
 
-   .colmn2 img {
+   .colmn img {
        max-width: 17vw;
        padding-bottom: 20px;
    }
@@ -135,14 +139,12 @@
 
    /******** colmn****/
 
-   .colmn2 {
+   .colmn {
        border-left-style: solid;
        border-left-color: gainsboro;
-       flex-grow: 2;
-       flex-basis: 250px;
-       padding-left: 20px;
-       padding-right: 20px;
-       margin-left: 60vw;
+       padding: 20px;
+       margin-left: 78vw;
+       max-width: 667px;
    }
 
    /******* tema1 *********/
@@ -242,12 +244,12 @@
 
    @media screen and (min-width: 376px) and (max-width: 768px) and (orientation: portrait) {
 
-       .colmn2 {
+       .colmn {
            margin-left: 20vw;
            background-color: brown;
            width: 50vw;
        }
-       .colmn2 img {
+       .colmn img {
            max-width: 36vw;
        }
 
@@ -311,11 +313,11 @@
    /********** ipad landscape ********/
 
    @media screen and (min-width: 813px) and (max-width: 1024px) and (orientation: landscape) {
-       .colmn2 {
+       .colmn {
            margin-left: 18vw;
            background-color: orange;
        }
-       .colmn2 img {
+       .colmn img {
            max-width: 45vw;
        }
 
@@ -339,12 +341,12 @@
            font-size: 0.94em;
        }
 
-       .colmn2 {
+       .colmn {
            margin-left: 13vw;
            background-color: greenyellow;
        }
 
-       .colmn2 img {
+       .colmn img {
            max-width: 58vw;
        }
 
@@ -422,12 +424,12 @@
 
    @media screen and (min-width: 376px) and (max-width: 812px) and (orientation: landscape) {
 
-       .colmn2 {
+       .colmn {
            margin-left: 18vw;
            background-color: red;
            max-width: 55vw;
        }
-       .colmn2 img {
+       .colmn img {
            max-width: 36vw;
        }
 
@@ -497,6 +499,42 @@
        }
    }
 
-
-
    /********** media query slut ***************/
+
+   /******** forside Image Overlay Hover ******/
+
+   .container_link {
+       position: relative;
+   }
+
+   .image {
+       display: block;
+       /*       width: 100%;*/
+       height: auto;
+   }
+
+   .overlay {
+       position: absolute;
+       top: 0;
+       bottom: 0;
+       left: 0;
+       right: 0;
+       height: 85%;
+       width: 100%;
+       opacity: 0;
+       transition: .5s ease;
+       background-color: darkslategray;
+   }
+
+   .container_link:hover .overlay {
+       opacity: 0.8;
+   }
+
+   .text {
+       color: white;
+       font-size: 1.2em;
+       position: absolute;
+       top: 50%;
+       left: 50%;
+       transform: translate(-50%, -50%);
+   }
