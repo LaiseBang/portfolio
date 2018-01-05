@@ -276,14 +276,20 @@
    @media screen and (min-width: 376px) and (max-width: 768px) and (orientation: portrait) {
 
        .colmn {
-           margin-left: 20vw;
-           background-color: brown;
-           width: 50vw;
+           margin-left: 50vw;
+           padding: 54px;
+           /*    background-color: brown;*/
        }
        .colmn img {
            max-width: 36vw;
+           padding-bottom: 26px;
        }
-
+       .baggrund {
+           background-image: url(img/laise_baggrund_ipad_portrait.jpg);
+       }
+       .logo {
+           width: 13vw;
+       }
        .colmn1 {
            /*background-color: darkseagreen; */
            max-width: 75vw;
@@ -332,13 +338,17 @@
 
    @media screen and (min-width: 813px) and (max-width: 1024px) and (orientation: landscape) {
        .colmn {
-           margin-left: 18vw;
-           background-color: orange;
+           margin-left: 65vw;
+           padding: 31px;
+           /*     background-color: orange;*/
        }
        .colmn img {
-           max-width: 45vw;
+           max-width: 20vw;
+           padding-bottom: 26px;
        }
-
+       .baggrund {
+           background-image: url(img/laise_baggrund_ipad_landscape.jpg);
+       }
        .colmn1 {
            margin-left: 13vw;
            /*       background-color: red;*/
@@ -360,14 +370,16 @@
        }
 
        .colmn {
-           margin-left: 13vw;
-           background-color: greenyellow;
+           margin-left: 40vw;
+           /*        background-color: greenyellow;*/
        }
 
        .colmn img {
-           max-width: 58vw;
+           max-width: 48vw;
        }
-
+       .baggrund {
+           background-image: url(img/laise_baggrund_mobil_portrait.jpg);
+       }
        .colmn1 {
            margin-left: 13vw;
            /*     background-color: greenyellow; */
@@ -431,14 +443,17 @@
    @media screen and (min-width: 376px) and (max-width: 812px) and (orientation: landscape) {
 
        .colmn {
-           margin-left: 18vw;
-           background-color: red;
-           max-width: 55vw;
+           margin-left: 70vw;
+           padding: 0, 10, 0, 10;
+           /*  background-color: red;*/
        }
        .colmn img {
-           max-width: 36vw;
+           max-width: 16.2vw;
+           padding-bottom: 10px;
        }
-
+       .baggrund {
+           background-image: url(img/laise_baggrund_mobil_landscape.jpg);
+       }
        .container2 {
            flex-direction: column-reverse;
        }
