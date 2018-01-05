@@ -165,7 +165,6 @@
        padding-top: 150px;
        margin-left: 15vw;
        max-width: 40vw;
-       z-index: -1;
    }
 
    .tema1_colmn2,
@@ -242,6 +241,33 @@
    .tema3_colmn6 img {
        max-width: 35vw;
        padding-bottom: 10px;
+   }
+
+   /********* om mig *********/
+
+   .om_colmn3 {
+       border-left-style: solid;
+       border-left-color: gainsboro;
+       border-top-style: solid;
+       border-top-color: gainsboro;
+       flex-grow: 2;
+       flex-basis: 204px;
+       padding: 20px;
+       padding-right: 20px;
+       margin-left: 15vw;
+       max-width: 20vw;
+   }
+
+   .om_colmn4 {
+       border-top-style: solid;
+       border-top-color: gainsboro;
+       padding: 20px;
+       flex-grow: 1;
+       max-width: 70vw;
+       flex-basis: 300px;
+       padding-left: 20px;
+       padding-right: 90px;
+       z-index: -1;
    }
 
    /*************** media query ***********/
