@@ -77,12 +77,12 @@
    }
 
    header img {
-       max-width: 100px;
+       max-width: 125px;
 
    }
 
    nav img {
-       width: 6.5vw;
+       width: 10vw;
    }
 
    header nav {
@@ -143,7 +143,7 @@
        flex-wrap: wrap;
    }
 
-   /******** colmn****/
+   /******** colmns ****/
 
    .colmn {
        border-left-style: solid;
@@ -153,10 +153,7 @@
        max-width: 667px;
    }
 
-   /******* tema1 *********/
-
-   .tema1_colmn1,
-   .tema2_colmn1 {
+   .colmn1 {
        flex-grow: 2.5;
        flex-basis: 300px;
        border-left-style: solid;
@@ -167,8 +164,7 @@
        max-width: 40vw;
    }
 
-   .tema1_colmn2,
-   .tema2_colmn2 {
+   .colmn2 {
        flex-grow: 1;
        flex-basis: 300px;
        padding: 20px;
@@ -176,15 +172,12 @@
 
    }
 
-   .tema1_colmn2 img,
-   .tema2_colmn2 img {
+   .colmn2 img {
        max-width: 35vw;
        padding-bottom: 10px;
    }
 
-   /******* tema2 *********/
-
-   .tema2_colmn3 {
+   .colmn3 {
        border-left-style: solid;
        border-left-color: gainsboro;
        border-top-style: solid;
@@ -197,12 +190,12 @@
        max-width: 40vw;
    }
 
-   .tema2_colmn3 img {
+   .colmn3 img {
        max-width: 35vw;
        padding-bottom: 10px;
    }
 
-   .tema2_colmn4 {
+   .colmn4 {
        border-top-style: solid;
        border-top-color: gainsboro;
        padding: 20px;
@@ -214,11 +207,7 @@
        z-index: -1;
    }
 
-   /********** tema2 slut *******/
-
-   /*********** tema3 ********/
-
-   .tema3_colmn5 {
+   .colmn5 {
        border-left-style: solid;
        border-left-color: gainsboro;
        border-top-style: solid;
@@ -229,7 +218,7 @@
        margin-left: 15vw;
    }
 
-   .tema3_colmn6 {
+   .colmn6 {
        border-top-style: solid;
        border-top-color: gainsboro;
        flex-grow: 1;
@@ -238,7 +227,7 @@
        max-width: 50vw;
    }
 
-   .tema3_colmn6 img {
+   .colmn6 img {
        max-width: 35vw;
        padding-bottom: 10px;
    }
@@ -250,24 +239,34 @@
        border-left-color: gainsboro;
        border-top-style: solid;
        border-top-color: gainsboro;
-       flex-grow: 2;
-       flex-basis: 204px;
+       flex-grow: 1;
+       flex-basis: 200px;
        padding: 20px;
-       padding-right: 20px;
        margin-left: 15vw;
-       max-width: 20vw;
+       max-width: 23vw;
+       /*      background: pink;*/
    }
 
    .om_colmn4 {
        border-top-style: solid;
        border-top-color: gainsboro;
-       padding: 20px;
        flex-grow: 1;
-       max-width: 70vw;
-       flex-basis: 300px;
-       padding-left: 20px;
-       padding-right: 90px;
-       z-index: -1;
+       flex-basis: 200px;
+       padding: 20px;
+       padding-top: 65px;
+       max-width: 23vw;
+       /*     background: yellow;*/
+   }
+
+   .om_colmn5 {
+       border-top-style: solid;
+       border-top-color: gainsboro;
+       flex-grow: 1;
+       flex-basis: 200px;
+       padding: 20px;
+       padding-top: 65px;
+       max-width: 23vw;
+       /*    background: grey;*/
    }
 
    /*************** media query ***********/
@@ -285,11 +284,11 @@
            max-width: 36vw;
        }
 
-       .tema1_colmn1 {
+       .colmn1 {
            /*background-color: darkseagreen; */
            max-width: 75vw;
        }
-       .tema1_colmn2 {
+       .colmn2 {
            /* background-color: lavender; */
            max-width: 75vw;
            border-left-style: solid;
@@ -300,20 +299,7 @@
        .container2 {
            flex-direction: column-reverse;
        }
-       .tema2_colmn1 {
-           /*    background-color: darkseagreen;*/
-           max-width: 75vw;
-       }
-       .tema2_colmn2 {
-           /*   background-color: lavender;*/
-           border-left-style: solid;
-           border-left-color: gainsboro;
-           margin-left: 15vw;
-           padding: 20px;
-           max-width: 75vw;
-           margin-left: 15vw;
-       }
-       .tema2_colmn3 {
+       .colmn3 {
            /*   background-color: lavender;*/
            border-top-style: none;
            margin-left: 15vw;
@@ -321,7 +307,7 @@
            max-width: 50vw;
            margin-left: 15vw;
        }
-       .tema2_colmn4 {
+       .colmn4 {
            /*   background-color: lavender;*/
            border-left-style: solid;
            border-left-color: gainsboro;
@@ -330,7 +316,7 @@
            max-width: 75vw;
            margin-left: 15vw;
        }
-       .tema3_colmn6 {
+       .colmn6 {
            border-top-style: none;
            border-left-style: solid;
            border-left-color: gainsboro;
@@ -353,12 +339,12 @@
            max-width: 45vw;
        }
 
-       .tema1_colmn1 {
+       .colmn1 {
            margin-left: 13vw;
            /*       background-color: red;*/
            max-width: 50vw;
        }
-       .tema1_colmn2 {
+       .colmn2 {
            /*     background-color: aqua; */
            padding-left: 15px;
            max-width: 50vw;
@@ -382,30 +368,18 @@
            max-width: 58vw;
        }
 
-       .tema1_colmn1 {
+       .colmn1 {
            margin-left: 13vw;
            /*     background-color: greenyellow; */
            max-width: 54vw;
        }
-       .tema1_colmn2 {
-           /*    background-color: lavender; */
-           padding-top: 10px;
-           padding-left: 18vw;
-           max-width: 75vw;
-       }
-       nav img {
-           max-width: 20vw;
-       }
+
        .container2 {
            flex-direction: column-reverse;
        }
-       .tema2_colmn1 {
-           margin-left: 13vw;
-           /*     background-color: greenyellow; */
-           max-width: 54vw;
-       }
-       .tema2_colmn2 {
-           /*    background-color: lavender; */
+
+       .colmn2 {
+           /*  background-color: orange;*/
            border-left-style: solid;
            border-left-color: gainsboro;
            margin-left: 13vw;
@@ -413,7 +387,7 @@
            max-width: 54vw;
            margin-left: 13vw;
        }
-       .tema2_colmn3 {
+       .colmn3 {
            /*   background-color: lavender;*/
            border-top-style: none;
            margin-left: 15vw;
@@ -422,7 +396,7 @@
            margin-left: 13vw;
            flex-basis: 98px;
        }
-       .tema2_colmn4 {
+       .colmn4 {
            /*   background-color: lavender;*/
            border-left-style: solid;
            border-left-color: gainsboro;
@@ -431,7 +405,7 @@
            max-width: 75vw;
            margin-left: 13vw;
        }
-       .tema3_colmn5 {
+       .colmn5 {
            /*   background-color: lavender;*/
            border-left-style: solid;
            border-left-color: gainsboro;
@@ -440,7 +414,7 @@
            max-width: 75vw;
 
        }
-       .tema3_colmn6 {
+       .colmn6 {
            border-top-style: none;
            border-left-style: solid;
            border-left-color: gainsboro;
@@ -465,27 +439,16 @@
            max-width: 36vw;
        }
 
-       .tema1_colmn1 {
-           margin-left: 13vw;
-           /*      background-color: red; */
-           max-width: 65vw;
-       }
-       .tema1_colmn2 {
-           /*    background-color: aqua;*/
-           padding-top: 10px;
-           padding-left: 16vw;
-           max-width: 75vw;
-       }
        .container2 {
            flex-direction: column-reverse;
        }
-       .tema2_colmn1 {
+       .colmn1 {
            margin-left: 13vw;
-           /*     background-color: greenyellow; */
+           /*   background-color: greenyellow;*/
            max-width: 60vw;
        }
-       .tema2_colmn2 {
-           /*    background-color: lavender; */
+       .colmn2 {
+           /*  background-color: lavender;*/
            border-left-style: solid;
            border-left-color: gainsboro;
            margin-left: 13vw;
@@ -493,7 +456,7 @@
            max-width: 54vw;
            margin-left: 13vw;
        }
-       .tema2_colmn3 {
+       .colmn3 {
            /*   background-color: lavender;*/
            border-top-style: none;
            margin-left: 15vw;
@@ -501,7 +464,7 @@
            max-width: 55vw;
            margin-left: 13vw;
        }
-       .tema2_colmn4 {
+       .colmn4 {
            /*   background-color: lavender;*/
            border-left-style: solid;
            border-left-color: gainsboro;
@@ -510,7 +473,7 @@
            max-width: 60vw;
            margin-left: 13vw;
        }
-       .tema3_colmn5 {
+       .colmn5 {
            /*   background-color: lavender;*/
            border-left-style: solid;
            border-left-color: gainsboro;
@@ -519,7 +482,7 @@
            max-width: 75vw;
 
        }
-       .tema3_colmn6 {
+       .colmn6 {
            border-top-style: none;
            border-left-style: solid;
            border-left-color: gainsboro;
