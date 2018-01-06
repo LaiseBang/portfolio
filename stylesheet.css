@@ -267,7 +267,7 @@
 
    /******** ipad portrait **************/
 
-   @media screen and (min-width: 376px) and (max-width: 768px) and (orientation: portrait) {
+   @media screen and (min-width: 415px) and (max-width: 768px) and (orientation: portrait) {
 
        .colmn {
            margin-left: 50vw;
@@ -279,7 +279,7 @@
            padding-bottom: 26px;
        }
        .baggrund {
-           background-image: url(img/laise_baggrund_ipad_portrait.jpg);
+           background-image: url(img/laise_baggrund_ipad_portrait2.jpg);
        }
 
        nav img {
@@ -378,24 +378,98 @@
        .baggrund {
            background-image: url(img/laise_baggrund_ipad_landscape.jpg);
        }
+       .colmn2 img,
+       .colmn3 img,
+       .colmn6 img {
+           max-width: 75vw;
+       }
        .colmn1 {
            margin-left: 15vw;
            /*       background-color: red;*/
-           max-width: 50vw;
+           min-width: 75vw;
        }
        .colmn2 {
            /*     background-color: aqua; */
+           border-left-style: solid;
+           border-left-color: gainsboro;
            padding-left: 15px;
-           max-width: 50vw;
+           max-width: 75vw;
+           margin-left: 15vw;
+           padding-top: 0;
+       }
+       .container2 {
+           flex-direction: column-reverse;
+       }
+       .colmn3 {
+           /*   background-color: lavender;*/
+           border-top-style: none;
+           margin-left: 15vw;
+           padding: 20px;
+           max-width: 80vw;
+           margin-left: 15vw;
+       }
+
+       .colmn4 {
+           /*   background-color: lavender;*/
+           border-left-style: solid;
+           border-left-color: gainsboro;
+           margin-left: 15vw;
+           padding: 20px;
+           max-width: 75vw;
+           margin-left: 15vw;
+       }
+       .om_colmn5 {
+           border-top-style: none;
+           padding-top: 0;
+           border-left-style: solid;
+           border-left-color: gainsboro;
+           margin-left: 15vw;
+           max-width: 75vw;
+       }
+       .colmn6 {
+           border-top-style: none;
+           border-left-style: solid;
+           border-left-color: gainsboro;
+           flex-grow: 1;
+           flex-basis: 300px;
+           padding: 20px;
+           max-width: 75vw;
+           margin-left: 15vw;
        }
        .om_colmn3 {
            margin-left: 15vw;
+           max-width: 90vw;
+           flex-grow: 1;
+           flex-basis: 300px;
+           padding-bottom: 0;
+       }
+       .om_colmn4 {
+           border-top-style: none;
+           border-left-style: solid;
+           border-left-color: gainsboro;
+           margin-left: 15vw;
+           max-width: 90vw;
+           padding-top: 0;
+           flex-grow: 1;
+           flex-basis: 300px;
+           padding-bottom: 0;
+       }
+
+       .om_colmn5 {
+           border-top-style: none;
+           border-left-style: solid;
+           border-left-color: gainsboro;
+           margin-left: 15vw;
+           max-width: 60vw;
+           padding-top: 0;
+           flex-grow: 1;
+           flex-basis: 300px;
        }
    }
 
    /***************mobil portrait ****************/
 
-   @media screen and (min-width: 300px) and (max-width: 375px) and (orientation: portrait) {
+   @media screen and (min-width: 300px) and (max-width: 414px) and (orientation: portrait) {
 
        * {
            font-size: 0.94em;
@@ -416,7 +490,7 @@
        }
 
        .baggrund {
-           background-image: url(img/laise_baggrund_mobil_portrait.jpg);
+           background-image: url(img/laise_baggrund_mobil_portrait3.jpg);
        }
 
        .colmn1 {
