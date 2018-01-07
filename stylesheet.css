@@ -120,6 +120,12 @@
 
    /********** Navigation / menu slut **************/
 
+   /**** kontakt *****/
+
+   .kontakt img {
+       max-width: 50px;
+   }
+
    /***** img ******/
 
    .colmn img {
@@ -596,7 +602,6 @@
        }
        .colmn {
            margin-left: 70vw;
-           padding: 0, 10, 0, 10;
            /*  background-color: red;*/
        }
        .colmn img {
