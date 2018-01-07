@@ -702,8 +702,8 @@
 
    .overlay {
        position: absolute;
-       top: 0;
-       bottom: 0;
+       top: 2px;
+       bottom: 2px;
        left: 0;
        right: 0;
        height: 85%;
@@ -714,7 +714,7 @@
    }
 
    .container_link:hover .overlay {
-       opacity: 0.8;
+       opacity: 0.9;
    }
 
    .text {
@@ -724,6 +724,19 @@
        top: 50%;
        left: 50%;
        transform: translate(-50%, -50%);
+   }
+
+   /********* footer ********/
+
+   footer {
+       position: absolute;
+       right: 20px;
+       padding: 10px;
+   }
+
+   footer img {
+       width: 10vw;
+       min-width: 150px;
    }
 
    /************** bi animation *****/
